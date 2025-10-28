@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html
+  lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO мета-теги -->
+    <meta
+      name="description"
+      content="Основи роботи з HTML5, CSS та створення інтерактивних веб-сторінок з формами."
+    />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Львова Софія Денисівна ТР-42" />
+    <title>LABROB1</title>
+    <!-- Заголовок вкладки -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Підключення CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+       <h1>Король Формули-1, який не знає гальм!</h1>
+      </h1>
+      <hr/>
+      <nav class="links">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Біографія</a></li>
+              <li><a href="registration.html">Реєстрація</a></li>
+              <li><a href="login.html">Вхід</a></li>
+              <li><a href="feedback.html">Зворотній зв'язок</a></li>
+      
+        </ul>
+      </nav>
+    </header>
+        <section>
+        <div class="feedback">
+      <h2>Чекаємо на ваш відгук!</h2>
+      <fieldset>
+  <legend>Feedback Form</legend>
+                
+                <input type="text"id="name"name="name"
+                  placeholder="Ім'я"
+                  required
+                  minlength="2"
+                /><br />
+<input type="email" id="" placeholder="Ел. пошта"><br>
+           <label for="Тема">
+Тема повідомлення:</label>
+<select id="тема">
+<option value="Виникла проблема">Виникла проблема</option>
+<option value="Відгук">Відгук</option>
+<option value="Побажання">Побажання</option>
+<option value="Повідомлення">Повідомлення</option>
+</select><br>
+ <label for="message">Повідомлення:</label>
+ <textarea id="message" name="Повідомлення" required minlength="10"></textarea><br>
+
+<input type="button" value="Відправити" onclick="alert('Відправлено!')" class="button"><br>
+            
+</form>
+            </div>
+       
+          </section>
+  </body>
+</html>

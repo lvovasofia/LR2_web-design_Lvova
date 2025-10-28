@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html
+  lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO мета-теги -->
+    <meta
+      name="description"
+      content="Основи роботи з HTML5, CSS та створення інтерактивних веб-сторінок з формами."
+    />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Львова Софія Денисівна ТР-42" />
+    <title>LABROB1</title>
+    <!-- Заголовок вкладки -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Підключення CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+<header>
+       <h1>Король Формули-1, який не знає гальм!</h1>
+      </h1>
+      <hr/>
+      <nav class="links">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Біографія</a></li>
+              <li><a href="registration.html">Реєстрація</a></li>
+         <li><a href="login.html">Вхід</a></li>
+              <li><a href="feedback.html">Зворотній зв'язок</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="container">
+      <h2>Реєстрація на фан-зустріч</h2>
+      <form
+        action="forms.html"
+        method="get"
+        autocomplete="on"
+        target="_blank"
+        name="form1"
+      >
+        <fieldset>
+          <legend>Registration Form</legend>
+          <div class="form-columns">
+            <div class="column">  
+           <label for="Ім'я">Ім'я:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+          /><br />
+          <label for="Прізвище">Прізвище:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="Ім'я"
+            required
+            minlength="2"
+          /><br />
+
+          <label for="Стать">Стать:</label><br />
+          <label for="pick1"
+            ><input type="radio" name="pick" id="pick1" />Чоловік</label
+          >
+          <label for="pick2"
+            ><input type="radio" name="pick" id="pick2" />Жінка</label
+          ><br />
+            </div>
+          <div class="column">
+          <label for="Вік"> Оберіть свою вікову категорію:</label>
+          <select id="Вік">
+            <option value="15-25">15-25</option>
+            <option value="26-40">26-40</option>
+            <option value="41-60">41-60</option>
+            <option value="61-80">61-80</option>
+            <option value="81-100">81-100</option></select
+          ><br />
+
+          <label for="Дата народження:"> Оберіть свою дату народження:</label>
+          <input type="datetime-local" id="birthdate" name="birthdate" /><br />
+          </div>
+          </div>
+          
+
+          <label for="Країна проживання">
+            Оберіть свою країну проживання:</label
+          >
+          <select id="Країна проживання" >
+            <option value="Італія">Італія</option>
+            <option value="Україна">Україна</option>
+            <option value="Польща">Польща</option>
+            <option value="Німеччина">Німеччина</option>
+            <option value="Англія">Англія</option></select
+          ><br />
+          <label for="Номер телефону:"> Номер телефону:</label><br />
+          <input
+            type="tel"
+            name=""
+            id=""
+            placeholder="+380991354646"
+            pattern="[A-Za-z]{2,20}"
+          /><br />
+          <label for="Електронна пошта:"> Електронна пошта:</label><br />
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="example@gmail.com"
+          /><br />
+          <label for="Пароль:"> Пароль:</label><br />
+          <input
+            type="password"
+            name=""
+            id=""
+            placeholder="Введіть свій пароль"
+          /><br />
+          <input type="checkbox" id="subscribe" name="subscribe" />Чи згідні ви
+          з умовами?<br />
+
+          <input
+            type="button"
+            value="Зареєструватися"
+            onclick="alert('Успішна реєстрація!')" class="button"
+          /><br />
+          <input
+            class="button"
+            type="button"
+            value="Відміна"
+            onclick="alert('Відміна!')"
+          /><br />
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
+
