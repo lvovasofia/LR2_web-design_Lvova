@@ -24,7 +24,6 @@ nav.links {
 
 nav.links ul {
     list-style: none;
-    padding: 0;
     display: flex;
     gap: 20px;
     background: #212653;
@@ -44,10 +43,6 @@ nav.links a:hover {
     border-radius: 3px;
 }
 
-.content-section {
-    overflow: hidden;
-    margin-top: 30px;
-}
 
 .image-container {
     float: left;
@@ -60,20 +55,6 @@ nav.links a:hover {
     overflow: hidden;
 }
 
-
-@media (max-width: 700px) {
-    .image-container {
-        float: none;
-        display: block;
-        margin: 0 auto 20px auto;
-        text-align: center;
-    }
-
-    .biography {
-        text-align: left;
-        clear: both;
-    }
-}
 
 footer {
     display: flex;
@@ -96,14 +77,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 700px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-}
+
 aside{
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -115,11 +91,11 @@ aside{
 
 
 .photos-container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
     padding: 20px;
 }
 
@@ -270,3 +246,88 @@ input:invalid:focus {
    
 }
 
+
+
+
+
+
+@media (max-width: 480px) {
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    nav.links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .photos-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .biography {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    nav.links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photos-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .content-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .photos-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
